@@ -9,14 +9,16 @@ const hello = 'hello'; // NON MODIFICARE QUESTA RIGA
 const cityIndex = city.indexOf("Y");
 console.log(cityIndex); // Output: 4
 
+const kIndex = city.indexOf("k")
+
 // 2. Sottostringhe 
 // Stampa la sottostringa "York" dalla variabile city
-const citySubstring = city.substring(4,8);
+const citySubstring = city.substring(cityIndex, kIndex + 1);
 console.log(citySubstring); // Output: "York"
 
 // 3. Sostituzione
 // Sostituisci 'York' con 'Delhi'
-const cityReplaced = city.substring(0,4) + "Delhi";
+const cityReplaced = city.replace("York", "Delhi");
 console.log(cityReplaced); // Output:  "New Delhi"
 
 // 4. Template literal
